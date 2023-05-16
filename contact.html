@@ -118,7 +118,7 @@
                         <form id="form-api">
                             <div class="mb-4 form-floating">
                                 <input type="text" class="form-control" id="floatingInput4" placeholder="Nome">
-                                <label for="floatingInput4">Name</label>
+                                <label for="floatingInput4">Nome</label>
                             </div>
                             <div class="mb-4 form-floating">
                                 <input type="email" class="form-control" id="floatingInput5" placeholder="name@example.com">
@@ -126,13 +126,13 @@
                             </div>
                             <div class="mb-4 form-floating">
                                 <textarea class="form-control" id="floatingTextarea1" placeholder="Sua mensagem aqui" rows="6"></textarea>
-                                <label for="floatingTextarea1">Message</label>
+                                <label for="floatingTextarea1">mensagem</label>
                             </div>
                             <div class="mb-4 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck2">
                                 <label class="form-check-label" for="exampleCheck2">I have read and completely agree with the websites stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a></label>
                             </div>
-                            <button type="submit" class="form-control-submit-button">Submit</button>
+                            <button type="submit" class="form-control-submit-button">Enviar</button>
                         </form>
                         <!-- end of contact form -->
 
@@ -235,15 +235,14 @@
             
         <!-- Scripts -->
         <script>
-            const formEl = document.getElementById('form-api')
+            const formEl = document.querySelector('#form-api')
 
-            formEl.addEventListener('submit', evento => {
+            formEl.addEventListener('submit', (evento) => {
                 evento.preventDefault();
 
                 const formData = new FormData(formEl);
-                const data = Object.fromEntries(formData);
 
-                console.log(data);
+                console.log(formData.get('floatingInput4'));
             })
 
         </script>
