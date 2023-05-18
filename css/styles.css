@@ -986,7 +986,7 @@ hr.hr-heading {
 
 .counter .counter-container .purecounter {
 	margin-bottom: 0.125rem;
-	color: #ffffff;
+	color: #394f63;
 	font-weight: 700;
 	font-size: 2.875rem;
 	line-height: 3.25rem;
@@ -994,19 +994,19 @@ hr.hr-heading {
 }
 
 .counter .counter-container .counter-info {
-	color: #ffffff;
+	color: #394f63;
 	font-size: 0.875rem;
 	line-height: 1.25rem;
 }
 
 .counter h5 {
 	margin-bottom: 1.5rem;
-	color: #ffffff;
+	color: #394f63;
 }
 
 .counter .btn-solid-reg:hover {
-	border: 1px solid #ffffff;
-	color: #ffffff;
+	border: 1px solid #394f63;
+	color: #394f63;
 }
 
 
