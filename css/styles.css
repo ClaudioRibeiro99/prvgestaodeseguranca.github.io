@@ -807,7 +807,7 @@ hr.hr-heading {
 /********************/
 .split .area-1 {
 	height: 432px;
-	background: url('../images/audience.jpg') center left no-repeat;
+	background: url('../images/prv-gestao-temp-1.png') center left no-repeat;
 	background-size: cover;
 }
 
@@ -1846,6 +1846,50 @@ hr.hr-heading {
 	.ex-cards-1 .card:nth-of-type(3n+2) {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
+	}
+	
+	.whatsapp-button {
+		position: fixed;
+		left: 20px;
+		bottom: 20px;
+		width: 60px;
+		height: 60px;
+		background-color: green;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 60px;
+		color: white;
+		font-size: 24px;
+		outline: none; 
+		cursor: pointer;
+		animation: floating 1s ease-in-out infinite alternate;
+		z-index: 9999;
+	}
+	
+	.whatsapp-button i {
+		margin-top: 3px;
+	}
+	
+	@keyframes floating {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(-10px);
+		}
+	}
+	
+	@media screen and (max-width: 480px) {
+		.whatsapp-button {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 20px;
+		}
+		
+		.whatsapp-button i {
+			margin-top: 1px;
+		}
 	}
 	/* end of extra pages */
 }
