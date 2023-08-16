@@ -1020,6 +1020,12 @@ hr.hr-heading {
 	color: #ffffff;
 }
 
+a.btn-solid-reg {
+	font-size: 18px;
+	padding: 35px 20px;
+	height: 80px;
+  }
+
 
 /************************/
 /*     Testimonials     */
