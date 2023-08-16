@@ -100,6 +100,7 @@ h6 {
 .p-large {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
+	color: #384653;
 }
 
 .p-small {
@@ -342,8 +343,10 @@ hr.hr-heading {
 }
 
 .navbar .navbar-brand {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
+	/* padding-top: 0.25rem;
+	padding-bottom: 0.25rem; */
+	max-width: 100px;
+  max-height: 100px;
 }
 
 .navbar .logo-image img {
@@ -505,7 +508,7 @@ hr.hr-heading {
 
 .header .p-large {
 	margin-bottom: 2.375rem;
-	color: #ffffff;
+	color: #303036;
 }
 
 .header .btn-solid-lg:hover {
@@ -801,6 +804,10 @@ hr.hr-heading {
 	opacity: 1;
 }
 
+.carousel {
+    position: sticky;
+}
+
 
 /********************/
 /*     Audience     */
@@ -850,6 +857,10 @@ hr.hr-heading {
 .split .btn-solid-reg:hover {
 	border: 1px solid #ffffff;
 	color: #ffffff;
+}
+
+.btn-solid-reg {
+	background-color: ;
 }
 
 
@@ -1007,6 +1018,11 @@ hr.hr-heading {
 .counter .btn-solid-reg:hover {
 	border: 1px solid #394f63;
 	color: #394f63;
+}
+
+.btn-solid-reg {
+	background-color: #008000;
+	color: #ffffff;
 }
 
 
