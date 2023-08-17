@@ -392,7 +392,7 @@ hr.hr-heading {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #ffffff;
+	color: #000000;
 	opacity: 0.8;
 	font-weight: 600;
 	text-decoration: none;
@@ -403,7 +403,7 @@ hr.hr-heading {
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link:focus,
 .navbar .nav-item .nav-link.active {
-	color: #ffffff;
+	color: #ee8c0b;
 	opacity: 1;
 }
 
@@ -1740,7 +1740,7 @@ a.btn-solid-reg {
 	}
 
 	.cards-1 .card {
-		width: 262px;
+		width: 450px;
 		margin-right: 0.375rem;
 		margin-left: 0.375rem;
 	}
@@ -1907,6 +1907,28 @@ a.btn-solid-reg {
 			margin-top: 1px;
 		}
 	}
+
+	.social-icon {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.instagram:hover {
+  background-color: #c1325f;
+}
+
+.youtube:hover {
+  background-color: #ff0000;
+}
+
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
