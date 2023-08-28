@@ -144,6 +144,10 @@ a:hover {
 	background-color: #f9fafb;
 }
 
+.bg-gray-s-a {
+	background-color: #E5C539;
+}
+
 hr.hr-heading {
 	display: block;
 	width: 3.5rem;
@@ -220,6 +224,27 @@ hr.hr-heading {
 .btn-outline-reg:hover {
 	background-color: #384653;
 	color: #ffffff;
+	text-decoration: none;
+}
+
+.btn-outline-reg-whatsapp {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #384653;
+	border-radius: 32px;
+	background-color: transparent;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+	background-color: green;
+}
+
+.btn-outline-reg-whatsapp:hover {
+	background-color: #384653;
+	color: green;
 	text-decoration: none;
 }
 
@@ -677,6 +702,8 @@ hr.hr-heading {
 }
 
 
+
+
 /******************************/
 /*     Description Modals     */
 /******************************/
@@ -800,7 +827,7 @@ hr.hr-heading {
 	height: 1px;
 	margin-top: 0;
 	border: none;
-	background-color: #d7d7d7;
+	background-color: #383838;
 	opacity: 1;
 }
 
@@ -1264,7 +1291,7 @@ a.btn-solid-reg {
 
 .ex-cards-1 .card {
 	border: none;
-	background-color: transparent;
+	background-color: 9f9f9f;
 }
 
 .ex-cards-1 .card .fa-stack {
