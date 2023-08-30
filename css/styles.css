@@ -57,6 +57,11 @@ h1 {
 	font-family: "Poppins", sans-serif;
 }
 
+.colored-text {
+	color: #9e3015;
+	font-weight: bold;
+  }
+
 h2 {
 	color: #384653;
 	font-weight: 600;
@@ -417,9 +422,10 @@ hr.hr-heading {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #000000;
+
+	color: #484848;
 	opacity: 0.8;
-	font-weight: 600;
+	font-weight: 1000;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -428,9 +434,44 @@ hr.hr-heading {
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link:focus,
 .navbar .nav-item .nav-link.active {
-	color: #9E3016;
+	color: #9e3015;
 	opacity: 1;
+	font-size: 20px;
 }
+
+.category-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.category {
+    text-align: center;
+    padding: 20px;
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+    .category {
+        width: calc(100% - 40px);
+		text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .category {
+        width: calc(100% - 40px);
+    }
+}
+
+
+
 
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
@@ -469,6 +510,15 @@ hr.hr-heading {
 	color: #ffffff;
 	opacity: 1;
 }
+
+.social-container-face {
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+}
+.social-container-insta {
+	margin-bottom: 1rem;
+}
+  
 
 .navbar .dropdown-divider {
 	width: 100%;
@@ -515,9 +565,9 @@ hr.hr-heading {
 /*****************/
 .header {
 	position: relative;
-	padding-top: 7rem;
+	padding-top: 5rem;
 	padding-bottom: 9rem;
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/banner-home.png') center center no-repeat;
+	background: linear-gradient(rgba(246, 246, 246, 0), rgba(0, 0, 0, 0)), url('../images/banner-home.png') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -533,7 +583,7 @@ hr.hr-heading {
 
 .header .p-large {
 	margin-bottom: 2.375rem;
-	color: #303036;
+	color: #e5c63a;
 }
 
 .header .btn-solid-lg:hover {
@@ -676,6 +726,21 @@ hr.hr-heading {
 
 .cards-1 .card a {
 	text-decoration: none;
+	cursor: pointer;
+}
+
+.expand-btn {
+	background-color: #9e3015;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.collapse-btn {
+	background-color: #e5c539;
+	color: white;
+	border: none;
+	padding: 5px 10px;
 	cursor: pointer;
 }
 
@@ -886,6 +951,9 @@ hr.hr-heading {
 	color: #ffffff;
 }
 
+
+
+
 /*********************/
 /*     Takeaways     */
 /*********************/
@@ -912,6 +980,9 @@ hr.hr-heading {
 	align-items: flex-start;
 	padding: 1.5rem;
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+.left-align {
 	text-align: left;
 }
 
