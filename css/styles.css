@@ -600,6 +600,7 @@ hr.hr-heading {
 }
 
 .header .h1-large {
+	margin-top: 6rem;
 	margin-bottom: 0.75rem;
 	color: #ffffff;
 }
