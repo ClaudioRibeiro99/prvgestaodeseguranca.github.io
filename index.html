@@ -51,7 +51,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="images/prv-logo-oficial-grande.png" alt="prv-logo" width="300" height="60">
+                <img src="images/prv-logo-oficial-194x93.png" alt="prv-logo" width="194" height="93">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -128,7 +128,7 @@
         </svg>
     </header> <!-- end of header -->
     <!-- end of header -->
-    <div id="sobre" class="cards-2" style="margin-top: 5rem; margin-bottom: 5rem;">
+    <div id="sobre" class="cards-2">
         <div class="container mt-5">
             <div class="jumbotron">
                 <h2 class="text-center">Sobre</h2>
@@ -156,21 +156,22 @@
             <h1>Um pouco da <span class="colored-text">prv gestão de segurança</span></h1>
             <h6 style="margin-bottom: 5rem;">Assista o vídeo abaixo:</h6>
             <div class="video-container">
-                <img class="video-preview" src="URL_DA_IMAGEM_PREVIEW.jpg" alt="Vídeo de pré-visualização">
-                <iframe class="video-frame embed-responsive-item" src="https://www.youtube.com/embed/wc1p5RmPvqg"
-                    title="29 de agosto de 2023" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <video controls class="video-frame embed-responsive-item">
+                    <source src="images/be brave.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
             </div>
         </div>
     </div>
+
+    
 
     <!-- Chapters -->
     <div id="servicos" class="cards-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="h2-heading" style="margin-top: 10rem;">Nossos <b>Serviços</b></h1>
+                    <h1 class="h2-heading" style="margin-top: 2rem;">Nossos Serviços</h1>
                     <hr class="hr-heading">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -370,7 +371,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="h2-heading"><strong>Segmentos</strong> de atuação</h2>
+                        <h2 class="h2-heading">Segmentos de atuação</h2>
                         <hr class="hr-heading">
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -423,46 +424,24 @@
         <!-- Footer -->
         <div class="footer">
             <div id="contato" class="container">
-                <div class="row">
+                <div class="row justify-content-start"> <!-- Adicione a classe justify-content-start aqui -->
                     <div class="col-lg-4">
                         <div class="infos-empresa">
                             <h2 class="text-white">Institucional</h2>
-                            <ul class="footer-links">
-                                <p><a href="#home">Home</a></p>
-                                <p><a href="#sobre">Sobre</a></p>
-                                <p><a href="#contato">Contato</a></p>
-                            </ul>
-                            <div class="social-container">
-                                <h3 class="text-white">Nos siga</h3>
-                                <div class="social-icons">
-                                    <div class="social-icon facebook">
-                                        <a href="https://www.facebook.com/profile.php?id=100091423384762&mibextid=ZbWKwL" target="_blank">
-                                            <i class="fab fa-facebook-f fa-2x"></i>
-                                        </a>
-                                    </div>
-                                    <div class="social-icon instagram">
-                                        <a href="https://www.instagram.com/prvgestaodesegurancadotrabalho/" target="_blank">
-                                            <i class="fab fa-instagram fa-2x"></i>
-                                        </a>
-                                    </div>
-                                    <div class="social-icon whatsapp">
-                                        <a href="https://api.whatsapp.com/send?phone=5511949097103" target="_blank">
-                                            <i class="fab fa-whatsapp fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>                            
+                            <p class="text-white">Home</p>
+                            <p class="text-white">Sobre</p>
+                            <p class="text-white">Contato</p>                                                     
                         </div>
                     </div> <!-- end of col -->
         
                     <div class="col-lg-4">
                         <div class="infos-empresa">
                             <h2 class="text-white">Serviços</h2>
-                            <ul class="footer-links">
-                                <p><a href="#elaboracao">Elaboração de Documentação</a></p>
-                                <p><a href="#consultoria">Consultoria</a></p>
-                                <p><a href="#treinamentos">Treinamentos</a></p>
-                            </ul>
+                            
+                            <p class="text-white">Elaboração de Documentação</p>
+                                <p class="text-white">Consultoria</p>
+                                    <p class="text-white">Treinamentos</p>
+                        
                         </div>
                     </div> <!-- end of col -->
         
@@ -477,6 +456,7 @@
                 </div> <!-- end of row -->
             </div>
         </div>
+        
         
         <!-- Copyright -->
         <div class="copyright">
@@ -498,6 +478,7 @@
         <a href="https://api.whatsapp.com/send?phone=11949097103" target="_blank">
             <div class="whatsapp-button">
                 <i class="fab fa-whatsapp"></i>
+                <span>Whatsapp</span>
             </div>
         </a>
 
