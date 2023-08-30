@@ -465,19 +465,19 @@ hr.hr-heading {
 .category {
     text-align: center;
     padding: 20px;
-    width: calc(33.33% - 40px);
+    width: calc(100% - 40px);
     margin: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 1200px) {
-    .category {
-        width: calc(100% - 40px);
-		text-align: center;
-    }
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os ícones */
 }
+
 
 @media (max-width: 767px) {
     .category {
@@ -530,7 +530,13 @@ hr.hr-heading {
 	margin-bottom: 1rem;
 	margin-right: 1rem;
 }
+
 .social-container-insta {
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+}
+
+.social-container-whatsapp {
 	margin-bottom: 1rem;
 }
   
