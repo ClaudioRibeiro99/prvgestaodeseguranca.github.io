@@ -529,6 +529,8 @@ hr.hr-heading {
 .social-container-face {
 	margin-bottom: 1rem;
 	margin-right: 1rem;
+	display: flex;
+	justify-content: left;
 }
 
 .social-container-insta {
@@ -604,7 +606,7 @@ hr.hr-heading {
 
 .header .p-large {
 	margin-bottom: 2.375rem;
-	color: #e5c63a;
+	color: #ffffff;
 }
 
 .header .btn-solid-lg:hover {
@@ -832,8 +834,6 @@ hr.hr-heading {
 /*     Chapters     */
 /********************/
 .cards-2 {
-	padding-top: 1.75rem;
-	padding-bottom: 4.5rem;
 	text-align: center;
 }
 
@@ -875,8 +875,8 @@ hr.hr-heading {
 /*     Summary     */
 /*******************/
 .basic-1 {
-	padding-top: 8.5rem;
-	padding-bottom: 10rem;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
 }
 
 .basic-1 .h2-heading {
@@ -1004,6 +1004,10 @@ hr.hr-heading {
 	text-align: left;
 }
 .left-align {
+	text-align: left;
+}
+
+.text-white {
 	text-align: left;
 }
 
@@ -1983,54 +1987,6 @@ a.btn-solid-reg {
 		margin-left: 2.875rem;
 	}
 	
-	.whatsapp-button {
-		position: fixed;
-		z-index: 99;
-		bottom: 20px;
-		left: 20px;
-		width: 60px;
-		height: 60px;
-		background-color: green;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 60px;
-		color: white;
-		font-size: 24px;
-		outline: none; 
-		cursor: pointer;
-		animation: floating 2s ease-in-out infinite alternate;		
-	}
-	
-	.whatsapp-button i {
-		margin-top: 3px;
-	}
-	
-	@keyframes floating {
-		0% {
-			transform: translateY(0);
-		}
-		100% {
-			transform: translateY(-10px);
-		}
-	}
-	
-	@media screen and (max-width: 2000px) {
-		.whatsapp-button {
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
-			font-size: 20px;
-		}
-		
-		.whatsapp-button i {
-			margin-top: 1px;
-		}
-	}
-
-	.social-icon {
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
 
 .social-icon:hover {
   transform: scale(1.1);
@@ -2044,10 +2000,78 @@ a.btn-solid-reg {
   background-color: #c1325f;
 }
 
+.whatsapp:hover {
+	background-color: green;
+  }
+
 .youtube:hover {
   background-color: #ff0000;
 }
 
+.social-container-face, .social-container-insta, .social-container-whatsapp {
+	display: inline-block;
+	margin-left: 10px;
+  }
+
 	/* end of extra pages */
+}
+
+.whatsapp-button {
+	position: fixed;
+	z-index: 99;
+	bottom: 20px;
+	left: 20px;
+	width: 100px;
+	height: 50px;
+	background-color: green;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	color: white;
+	font-size: 34px;
+	outline: none; 
+	cursor: pointer;
+	animation: floating 2s ease-in-out infinite alternate;		
+}
+
+.whatsapp-button i {
+	margin-top: 3px;
+}
+
+.whatsapp-button span {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+
+@media screen and (max-width: 2000px) {
+	.whatsapp-button {
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		font-size: 20px;
+	}
+	
+	.whatsapp-button i {
+		margin-top: 2px;
+	}
+	
+	.whatsapp-button span {
+		margin-top: 5px;
+		font-size: 14px;
+	}
+}
+
+.social-icon {
+cursor: pointer;
+transition: all 0.3s ease-in-out;
 }
 /* end of min-width 1200px */
